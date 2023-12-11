@@ -1,0 +1,10 @@
+# folder
+**/.git
+**/node_modules
+**/build
+**/dist
+**/coverage
+**/lib
+
+# file
+**/*.lock

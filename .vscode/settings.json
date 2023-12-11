@@ -1,0 +1,47 @@
+/* vscode workspace setting */
+{
+  /* ---常用设置---*/
+  /* ---文本编辑器--- */
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  /* ---工作台&窗口--- */
+  /* ---功能--- */
+  /* ---应用程序--- */
+  /* ---扩展--- */
+  "html.validate.scripts": false,
+  "html.validate.styles": false,
+  "css.format.enable": false,
+  "css.validate": false,
+  "less.format.enable": false,
+  "less.validate": false,
+  "scss.format.enable": false,
+  "scss.validate": false,
+  "javascript.format.enable": false,
+  "javascript.validate.enable": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "stylelint.validate": ["css", "less", "scss"],
+  "hediet.vscode-drawio.codeLinkActivated": true,
+  "hediet.vscode-drawio.resizeImages": null
+  // prettier相关配置移步.prettierrc.js
+}
