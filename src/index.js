@@ -8,22 +8,24 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
+import Tic from './comp/Tic-tac-toe2.js';
+import './comp/Tic-tac-toe2.css';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: (
       <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
+        <h1>Home</h1>
+        <Link to="tic">Tic-Tac-Toe</Link>
       </div>
     ),
   },
   {
-    path: 'about',
+    path: '/tic',
     element: (
       <div>
-        About
+        <Tic />
         <Link to="/">Home</Link>
       </div>
     ),

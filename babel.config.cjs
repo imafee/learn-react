@@ -7,7 +7,7 @@ module.exports = function (api) {
       '@babel/preset-env',
       {
         useBuiltIns: 'usage',
-        corejs: '3.33.2',
+        corejs: '3.34.0',
       },
     ],
     '@babel/preset-react',
