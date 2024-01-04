@@ -8,8 +8,8 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import Tic from './comp/Tic-tac-toe2.js';
-import './comp/Tic-tac-toe2.css';
+// import Tic from './comp/Tic-tac-toe2.js';
+import FilterableProductTable from './comp/FilterableProductTable.js';
 
 const router = createBrowserRouter([
   {
@@ -17,15 +17,15 @@ const router = createBrowserRouter([
     element: (
       <div>
         <h1>Home</h1>
-        <Link to="tic">Tic-Tac-Toe</Link>
+        <Link to="/table">table</Link>
       </div>
     ),
   },
   {
-    path: '/tic',
+    path: '/table',
     element: (
       <div>
-        <Tic />
+        <FilterableProductTable />
         <Link to="/">Home</Link>
       </div>
     ),

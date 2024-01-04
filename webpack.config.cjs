@@ -12,6 +12,7 @@ const envFile = require('./env.json');
 module.exports = (env, args) => {
   process.env.NODE_ENV = process.env.BROWSERSLIST_ENV = env.mode;
   const ASSET_PATH = envFile[env.mode]['ASSET_PATH'];
+  console.log('[[[ASSET_PATH]]]:::', ASSET_PATH);
   const isProduction = env.mode === 'production';
   const stylesHandler = isProduction
     ? MiniCssExtractPlugin.loader
@@ -20,7 +21,7 @@ module.exports = (env, args) => {
   const config = {
     entry: {
       index: './src/index.js',
-      another: './src/another.js',
+      // another: './src/another.js',
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
@@ -32,6 +33,7 @@ module.exports = (env, args) => {
     devServer: {
       static: './dist',
       host: 'localhost',
+      historyApiFallback: true,
       open: true,
       hot: true,
     },
